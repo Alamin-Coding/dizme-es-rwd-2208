@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.png" type="icon/image">
+    <title>Class 28</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery.lineProgressbar.css" />
+    <link rel="stylesheet" href="css/venobox.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Mouse Event start -->
+    <span class="custom_mouse"></span>
+    <span class="point"></span>
+    <!-- Mouse Event end -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container p-0">
+        
+        <a class="navbar-brand" href="#">
+          <img class="img-fluid w-50" src="images/dark.png" alt="image" />
+        </a>
+        <button
+          class="navbar-toggler d-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="animation_close_btn btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <!-- <i class="fas fa-bars"></i> -->
+          <span class="line_1"></span>
+          <span class="line_2"></span>
+          <span class="line_3"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 main_menu">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="download_cv">
+            <a href="#">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Side menu start -->
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+          <a href="index.html">
+            <img class="img-fluid" src="./images/favicon.png" alt="image">
+          </a>
+        </h5>
+      </div>
+      <div class="offcanvas-body">
+        <div class="galley">
+          <div class="item">
+            <img class="img-fluid" src="./images/product-1.jpg" alt="">
+          </div>
+          <div class="item">
+            <img class="img-fluid" src="./images/product-1.jpg" alt="">
+          </div>
+          <div class="item">
+            <img class="img-fluid" src="./images/product-1.jpg" alt="">
+          </div>
+          <div class="item">
+            <img class="img-fluid" src="./images/product-1.jpg" alt="">
+          </div>
+        </div>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 main_menu">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Side menu end -->
+
+    <!-- Banner part start -->
+    <section id="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12 d-lg-none">
+            <div class="mouse">
+              <a href="#">
+                <svg
+                  width="26px"
+                  height="100%"
+                  viewBox="0 0 247 390"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  style="
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 1.5;
+                  "
+                >
+                  <path
+                    id="wheel"
+                    d="M123.359,79.775l0,72.843"
+                    style="fill: none; stroke: #fff; stroke-width: 20px"
+                  ></path>
+                  <path
+                    id="mouse"
+                    d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                    style="fill: none; stroke: #fff; stroke-width: 20px"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner_info">
+              <h4>Hello i'm</h4>
+              <h1>James Smith</h1>
+              <h5 class="">
+                A <span class="green">Creative Designer</span> From
+                <span class="yellow">New York</span>
+              </h5>
+              <p>
+                I'm creative designer based in New York, and I'm very passionate
+                and dedicated to my work.
+              </p>
+              <div class="banner_btn">
+                <a class="about_me common_btn_one" href="#">About me</a>
+                <span>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-behance"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner_image text-center">
+              <div class="man_image">
+                <img class="img-fluid h-100" src="images/man.png" alt="image" />
+                <span class="illustrator"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Layer_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 231.597 231.597"
+                    style="enable-background: new 0 0 231.597 231.597"
+                    xml:space="preserve"
+                    class="svg replaced-svg"
+                  >
+                    <g id="XMLID_449_">
+                      <path
+                        id="XMLID_450_"
+                        d="M2.499,211.77h42.076c1.123,0,2.109-0.749,2.41-1.832l12.271-44.237h47.637l13.313,44.289   c0.318,1.057,1.291,1.78,2.395,1.78h43.672c0.008,0,0.016,0,0.02,0c1.381,0,2.5-1.119,2.5-2.5c0-0.369-0.078-0.719-0.223-1.034   l-55.564-179.19c-0.324-1.046-1.293-1.76-2.389-1.76h-53.26c-1.1,0-2.07,0.718-2.391,1.769L0.109,208.539   c-0.23,0.758-0.09,1.581,0.381,2.218C0.962,211.394,1.706,211.77,2.499,211.77z M99.554,130.342H66.511l9.764-34.902   c1.773-6.289,3.449-13.731,5.07-20.928c0.371-1.653,0.736-3.275,1.098-4.861c2.145,8.622,4.504,17.937,6.869,25.815L99.554,130.342   z"
+                      ></path>
+                      <path
+                        id="XMLID_453_"
+                        d="M187.288,76.551c-1.381,0-2.5,1.119-2.5,2.5V209.27c0,1.381,1.119,2.5,2.5,2.5h40.477   c1.381,0,2.5-1.119,2.5-2.5V79.051c0-1.381-1.119-2.5-2.5-2.5H187.288z"
+                      ></path>
+                      <path
+                        id="XMLID_454_"
+                        d="M207.261,65.571c14.102,0,24.336-9.563,24.336-22.795c-0.307-13.512-10.205-22.949-24.07-22.949   c-7.078,0-13.363,2.442-17.697,6.878c-4.067,4.16-6.234,9.886-6.108,16.127c-0.129,6.043,2.043,11.666,6.119,15.84   C194.185,63.121,200.372,65.571,207.261,65.571z"
+                      ></path>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g></svg
+                ></span>
+                <span class="ps">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    id="Layer_1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 243.852 243.852"
+                    style="enable-background: new 0 0 243.852 243.852"
+                    xml:space="preserve"
+                    class="svg replaced-svg"
+                  >
+                    <g id="XMLID_309_">
+                      <path
+                        id="XMLID_311_"
+                        d="M45.213,211.003v-61.364c3.273,0.319,7.133,0.485,11.346,0.485c25.676,0,46.436-6.773,60.043-19.594   c11.146-10.589,17.287-26.365,17.287-44.42c0-17.536-7.334-33.392-20.109-43.494c-12.559-10.045-31.014-14.929-56.42-14.929   c-22.008,0-40.605,1.266-55.279,3.764C0.879,31.654,0,32.696,0,33.915v177.088c0,1.381,1.119,2.5,2.5,2.5h40.213   C44.094,213.503,45.213,212.384,45.213,211.003z M45.213,113.339V64.405c2.455-0.471,7.066-1.094,14.275-1.094   c18.551,0,29.19,8.698,29.19,23.863c0,16.776-12.105,26.793-32.385,26.793C51.428,113.967,47.963,113.775,45.213,113.339z"
+                      ></path>
+                      <path
+                        id="XMLID_334_"
+                        d="M206.76,129.02c-16.568-5.798-19.363-8.559-19.363-12.553c0-7.093,8.109-8.152,12.945-8.152   c10.268,0,20.979,3.852,27.031,7.15c0.678,0.369,1.484,0.405,2.193,0.098c0.705-0.308,1.232-0.924,1.424-1.67l7.191-27.959   c0.293-1.141-0.25-2.332-1.303-2.858c-7.465-3.732-21.332-7.721-37.869-7.721c-32.674,0-55.494,18.549-55.494,45.065   c-0.221,12.937,6.317,30.649,38.725,41.558c15.742,5.248,17.465,7.975,17.465,12.542c0,2.082,0,8.418-14.809,8.418   c-11.094,0-26.072-4.927-33.588-9.491c-0.682-0.413-1.516-0.478-2.252-0.174c-0.734,0.303-1.281,0.938-1.473,1.71l-7.189,29.028   c-0.274,1.107,0.236,2.258,1.238,2.8c10.998,5.944,26.768,9.354,43.264,9.354c36.365,0,58.955-17.08,58.955-44.608   C243.563,150.866,232.119,137.746,206.76,129.02z"
+                      ></path>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                </span>
+                <span class="figma">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    class="svg replaced-svg"
+                  >
+                    <g fill="none" fill-rule="evenodd" transform="translate(4)">
+                      <circle cx="12" cy="12" r="4" fill="#19BCFE"></circle>
+                      <path
+                        fill="#09CF83"
+                        d="M4,24 C6.209139,24 8,22.209139 8,20 C8,19.3969461 8,18.0636128 8,16 C6.20303877,16 4.86970543,16 4,16 C1.790861,16 0,17.790861 0,20 C0,22.209139 1.790861,24 4,24 Z"
+                      ></path>
+                      <path
+                        fill="#A259FF"
+                        d="M4,16 C4.73637967,16 6.069713,16 8,16 L8,8 C6.069713,8 4.73637967,8 4,8 C1.790861,8 0,9.790861 0,12 C0,14.209139 1.790861,16 4,16 Z"
+                      ></path>
+                      <path
+                        fill="#F24E1E"
+                        d="M4,8 C4.73637967,8 6.069713,8 8,8 L8,0 C6.069713,0 4.73637967,0 4,0 C1.790861,0 0,1.790861 0,4 C0,6.209139 1.790861,8 4,8 Z"
+                      ></path>
+                      <path
+                        fill="#FF7262"
+                        d="M12,8 L8,8 L8,8 L8,0 L12,0 L12,0 C14.209139,0 16,1.790861 16,4 C16,6.209139 14.209139,8 12,8 Z"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 d-none d-lg-block">
+            <div class="mouse">
+              <a href="#">
+                <svg
+                  width="26px"
+                  height="100%"
+                  viewBox="0 0 247 390"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  style="
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 1.5;
+                  "
+                >
+                  <path
+                    id="wheel"
+                    d="M123.359,79.775l0,72.843"
+                    style="fill: none; stroke: #fff; stroke-width: 20px"
+                  ></path>
+                  <path
+                    id="mouse"
+                    d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                    style="fill: none; stroke: #fff; stroke-width: 20px"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner part end -->
+
+    <!-- Process part start -->
+    <section id="process">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="process_item">
+              <div class="image">
+                <img src="images/proccess-1.png" alt="image" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  enable-background="new 0 0 512 512"
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="512"
+                  class="svg replaced-svg"
+                >
+                  <g>
+                    <g fill="#ffbdbc">
+                      <path
+                        d="m355.718 184.856c16 21.831 25.456 48.734 25.456 77.801 0 72.781-59.28 131.993-132.146 131.993s-132.146-59.212-132.146-131.993 59.28-131.993 132.146-131.993c29.416 0 56.617 9.65 78.598 25.947l38.065-38.021c-31.897-25.82-72.503-41.306-116.663-41.306-102.333 0-185.587 83.158-185.587 185.373s83.254 185.373 185.587 185.373 185.587-83.158 185.587-185.373c0-43.796-15.285-84.093-40.805-115.849z"
+                      ></path>
+                      <path
+                        d="m253.34 258.964c7.527-23.543 19.843-45.232 36.132-63.726-11.827-7.105-25.666-11.194-40.444-11.194-43.398 0-78.704 35.266-78.704 78.614 0 43.347 35.307 78.614 78.704 78.614s78.704-35.266 78.704-78.614c0-14.446-3.922-27.995-10.757-39.64-18.479 16.198-40.134 28.45-63.635 35.946z"
+                      ></path>
+                    </g>
+                    <g>
+                      <path
+                        d="m509.067 97.566c2.717-2.714 3.64-6.745 2.374-10.371s-4.496-6.206-8.312-6.641l-40.436-4.595-26.15-26.12-4.6-40.379c-.435-3.813-3.013-7.042-6.636-8.308-3.625-1.27-7.651-.346-10.367 2.364l-39.563 39.518c-1.098 1.097-2.13 2.242-3.094 3.431-37.428-21.326-79.858-32.56-123.255-32.56-66.516 0-129.051 25.873-176.086 72.854-47.037 46.984-72.942 109.453-72.942 175.899s25.905 128.915 72.942 175.898c47.035 46.98 109.57 72.854 176.086 72.854s129.051-25.873 176.086-72.854c47.037-46.983 72.942-109.452 72.942-175.898 0-43.043-11.093-85.149-32.157-122.348 1.25-1.002 2.454-2.078 3.604-3.227zm-53.698 25.367c-5.112 5.107-12.162 7.577-19.354 6.752l-9.797-1.113 32.925-32.887 21.105 2.398zm-136.954 85.048c-13.718 13.702-29.822 24.988-47.351 33.273 8.293-17.499 19.589-33.578 33.302-47.274l124.092-123.949 14.034 14.017zm-73.836 45.602c-.02.02-.04.039-.06.059l-10.671 10.658c-3.907 3.903-3.911 10.235-.008 14.143 1.953 1.955 4.514 2.933 7.075 2.933 2.558 0 5.115-.975 7.067-2.925l10.671-10.659c.021-.021.041-.042.062-.063 27.698-9.239 53.183-24.97 73.835-45.597l21.589-21.564c11.172 18.766 17.035 40.045 17.035 62.091 0 67.268-54.794 121.993-122.146 121.993s-122.146-54.726-122.146-121.993 54.794-121.993 122.146-121.993c22.406 0 43.961 6.01 62.928 17.465l-21.725 21.7c-20.651 20.626-36.401 46.083-45.652 73.752zm169.838-221.275 2.4 21.081-32.945 32.907-1.116-9.801c-.815-7.169 1.646-14.208 6.756-19.312zm63.64 230.35c0 126.134-102.741 228.752-229.028 228.752s-229.029-102.618-229.029-228.752c0-126.135 102.741-228.753 229.028-228.753 40.386 0 79.854 10.571 114.561 30.63-1 4.602-1.254 9.397-.705 14.224v.001l2.915 25.589-39.327 39.282c-23.073-15.048-49.698-22.965-77.444-22.965-78.379 0-142.146 63.698-142.146 141.993s63.767 141.993 142.146 141.993 142.146-63.698 142.146-141.993c0-27.371-7.762-53.728-22.503-76.606l39.453-39.407 25.633 2.912v.001c1.674.189 3.341.283 5 .283 3.055 0 6.075-.319 9.017-.941 19.832 34.503 30.283 73.684 30.283 113.757z"
+                        fill="#fff"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <h3>Pixel Perfect</h3>
+                <p>
+                  Most common methods for designing websites that work well on
+                  desktop is responsive and adaptive design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="process_item">
+              <div class="image">
+                <img src="images/proccess-1.png" alt="image" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  enable-background="new 0 0 512 512"
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="512"
+                  class="svg replaced-svg"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="m259.24 10v129.488c0 20.226 16.507 36.623 36.869 36.623 20.362 0 36.869-16.397 36.869-36.623v-25.265c0 20.226 16.507 36.623 36.869 36.623 20.362 0 36.869-16.397 36.869-36.623v-104.223z"
+                        fill="#a4fcc4"
+                      ></path>
+                    </g>
+                    <g>
+                      <path
+                        d="m406.715 0h-301.43c-5.522 0-10 4.478-10 10v265.095c0 30.561 25.039 55.424 55.816 55.424h65.657v19.147c0 22.644-5.125 55.535-14.92 74.587-4.886 9.503-7.138 20.21-6.513 30.964 1.778 30.614 27.362 55.536 58.244 56.735.825.032 1.646.048 2.467.048 15.875 0 30.798-5.984 42.249-17 11.925-11.47 18.491-26.862 18.491-43.344 0-9.146-2.011-17.935-5.978-26.124-10.105-20.863-15.559-54.661-15.559-75.87v-19.144h65.657c30.777 0 55.816-24.863 55.816-55.424v-265.094c.003-5.522-4.475-10-9.997-10zm-291.43 20h31.408v38.517c0 5.522 4.478 10 10 10s10-4.478 10-10v-38.517h21.862v101.109c0 5.522 4.478 10 10 10s10-4.478 10-10v-101.109h188.159v222.786h-281.43v-222.786zm281.43 255.095c0 19.533-16.067 35.424-35.816 35.424h-75.657c-5.522 0-10 4.478-10 10v29.144c0 24.021 6.031 60.79 17.559 84.589 2.64 5.448 3.978 11.305 3.978 17.405 0 10.991-4.388 21.266-12.355 28.93-8.088 7.78-18.791 11.808-30.074 11.382-20.712-.805-37.867-17.457-39.055-37.911-.418-7.188 1.08-14.332 4.333-20.659 11.771-22.896 17.133-59.454 17.133-83.731v-29.147c0-5.522-4.478-10-10-10h-75.657c-19.749 0-35.816-15.891-35.816-35.424v-12.309h281.43v12.307z"
+                        fill="#fff"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <h3>Pixel Perfect</h3>
+                <p>
+                  Most common methods for designing websites that work well on
+                  desktop is responsive and adaptive design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="process_item">
+              <div class="image">
+                <img src="images/proccess-1.png" alt="image" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  enable-background="new 0 0 512 512"
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="512"
+                  class="svg replaced-svg"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="m259.24 10v129.488c0 20.226 16.507 36.623 36.869 36.623 20.362 0 36.869-16.397 36.869-36.623v-25.265c0 20.226 16.507 36.623 36.869 36.623 20.362 0 36.869-16.397 36.869-36.623v-104.223z"
+                        fill="#a4fcc4"
+                      ></path>
+                    </g>
+                    <g>
+                      <path
+                        d="m406.715 0h-301.43c-5.522 0-10 4.478-10 10v265.095c0 30.561 25.039 55.424 55.816 55.424h65.657v19.147c0 22.644-5.125 55.535-14.92 74.587-4.886 9.503-7.138 20.21-6.513 30.964 1.778 30.614 27.362 55.536 58.244 56.735.825.032 1.646.048 2.467.048 15.875 0 30.798-5.984 42.249-17 11.925-11.47 18.491-26.862 18.491-43.344 0-9.146-2.011-17.935-5.978-26.124-10.105-20.863-15.559-54.661-15.559-75.87v-19.144h65.657c30.777 0 55.816-24.863 55.816-55.424v-265.094c.003-5.522-4.475-10-9.997-10zm-291.43 20h31.408v38.517c0 5.522 4.478 10 10 10s10-4.478 10-10v-38.517h21.862v101.109c0 5.522 4.478 10 10 10s10-4.478 10-10v-101.109h188.159v222.786h-281.43v-222.786zm281.43 255.095c0 19.533-16.067 35.424-35.816 35.424h-75.657c-5.522 0-10 4.478-10 10v29.144c0 24.021 6.031 60.79 17.559 84.589 2.64 5.448 3.978 11.305 3.978 17.405 0 10.991-4.388 21.266-12.355 28.93-8.088 7.78-18.791 11.808-30.074 11.382-20.712-.805-37.867-17.457-39.055-37.911-.418-7.188 1.08-14.332 4.333-20.659 11.771-22.896 17.133-59.454 17.133-83.731v-29.147c0-5.522-4.478-10-10-10h-75.657c-19.749 0-35.816-15.891-35.816-35.424v-12.309h281.43v12.307z"
+                        fill="#fff"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <h3>Pixel Perfect</h3>
+                <p>
+                  Most common methods for designing websites that work well on
+                  desktop is responsive and adaptive design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Process part End -->
+
+    <!-- About part Start -->
+    <section id="about">
+      <div class="about_top_image">
+        <picture>
+          <img src="images/about_top.png" alt="" />
+        </picture>
+      </div>
+      <div class="about_bottom_image">
+        <picture>
+          <img src="images/about_bottom.png" alt="" />
+        </picture>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about_image">
+              <picture>
+                <img class="img-fluid" src="images/about.jpg" alt="image" />
+              </picture>
+              <div class="counter_item counter_success">
+                <div class="count">
+                  <span class="counter">18</span>
+                  <span class="text">Years of Success</span>
+                </div>
+              </div>
+              <div class="counter_item counter_project">
+                <div class="count">
+                  <span class="yellow"> <span class="counter">9</span>K </span>
+                  <span class="text">Total Projects</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about_text">
+              <div class="section_heading">
+                <h3>I'm a Designer</h3>
+                <h2>I Can Design Anything You Want</h2>
+              </div>
+              <p>
+                Hello there! I'm a web designer, and I'm very passionate and
+                dedicated to my work. With 20 years experience as a professional
+                web developer, I have acquired the skills and knowledge
+                necessary to make your project a success. I enjoy every step of
+                the design process, from discussion and collaboration.
+              </p>
+              <a href="#" class="common_btn_one">Hire me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About part End -->
+
+    <!-- Portfolio part start -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section_heading">
+          <h3>Portfolio</h3>
+          <h2>My Amazing Works</h2>
+          <p>
+            Most common methods for designing websites that work well on desktop
+            is responsive and adaptive design
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="portfolio_menu">
+              <ul>
+                <li class="filter active" type="button" data-filter="all">
+                  All
+                </li>
+                <li class="filter" type="button" data-filter=".youtube">
+                  Youtube
+                </li>
+                <li class="filter" type="button" data-filter=".vimeo">Vimeo</li>
+                <li class="filter" type="button" data-filter=".could">cloud</li>
+                <li class="filter" type="button" data-filter=".popup">Popup</li>
+                <li class="filter" type="button" data-filter=".detail">
+                  Detail
+                </li>
+              </ul>
+            </div>
+
+            <div class="portfolio_gallery">
+              <div class="port_item tile scale-anm youtube">
+                <a
+                  class="youtube_play"
+                  data-autoplay="true"
+                  data-vbtype="video"
+                  href="https://youtu.be/hNb-PrNRuOM"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="images/g-1.jpg"
+                    alt="image"
+                  />
+                </a>
+              </div>
+              <div class="port_item tile scale-anm popup">
+                <a
+                  class="image_popup"
+                  data-gall="gallery01"
+                  href="images/g-4.jpg"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="images/g-4.jpg"
+                    alt="image"
+                  />
+                </a>
+              </div>
+              <div class="port_item tile scale-anm vimeo">
+                <a
+                  class="vimeo_play"
+                  data-autoplay="true"
+                  data-vbtype="video"
+                  href="https://vimeo.com/337293658"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="images/g-2.jpg"
+                    alt="image"
+                  />
+                </a>
+              </div>
+              <div class="port_item tile scale-anm popup">
+                <a
+                  class="image_popup"
+                  data-gall="gallery01"
+                  href="images/g-5.jpg"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="images/g-5.jpg"
+                    alt="image"
+                  />
+                </a>
+              </div>
+              <div class="port_item tile scale-anm could">
+                <a
+                  class="could_play"
+                  data-vbtype="iframe"
+                  href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="images/g-3.jpg"
+                    alt="image"
+                  />
+                </a>
+              </div>
+              <div class="port_item tile scale-anm detail">
+                <a
+                  href="#"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#alamin"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="images/g-6.jpg"
+                    alt="image"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- Modal start  -->
+            <!-- Button trigger modal -->
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="alamin"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-dark">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Sapiente, placeat nisi non aliquam consectetur beatae quod
+                      quo assumenda enim. Minus sequi sapiente ipsam vitae
+                      veritatis nisi repellendus esse assumenda cupiditate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal end -->
+          </div>
+        </div>
+      </div>
+      <div class="bottom_image">
+        <img class="img-fluid" src="images/portfolio-bottom.png" alt="image" />
+      </div>
+    </section>
+    <!-- Portfolio part end -->
+
+    <section id="team">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="skill">
+              <div class="section_heading">
+                <h3>Design is Life</h3>
+                <h2>I Develop Skills Regularly to Keep Me Update</h2>
+                <p>
+                  Most common methods for designing websites that work well on
+                  desktop is responsive and adaptive design
+                </p>
+              </div>
+              <div class="skill_item">
+                <div class="item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image">
+              <img class="img-fluid" src="images/skill.jpg" alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service part start -->
+    <section id="service" >
+      <div class="container">
+        <div class="section_heading">
+          <h3>Services</h3>
+          <h2>What I Do for Clients</h2>
+          <p>
+            Most common methods for designing websites that work well on desktop
+            is responsive and adaptive design
+          </p>
+        </div>
+        <!-- service items  -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="service_item" data-tilt>
+              <div class="icon">
+                <img
+                  class="img-fluid"
+                  src="images/service-icon-1.png"
+                  alt="victor image"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="400"
+                  viewBox="0 -59 400 400"
+                  width="400"
+                  class="svg replaced-svg"
+                >
+                  <path
+                    d="m329.5 30h-89.5v-20.199219c.101562-5.300781-4.199219-9.699219-9.5-9.800781-.101562 0-.199219 0-.300781 0h-61.199219c-5.398438-.0976562-9.898438 4.203125-10 9.703125v.097656 20.199219h-89.300781c-5.5 0-10 4.5-10 10s4.5 10 10 10h60.601562c-24.199219 21-39.300781 50.800781-39.300781 83.703125v67.296875h-18.199219c-5.402343 0-9.800781 4.402344-9.800781 9.800781v.199219 61.203125c-.101562 5.296875 4.199219 9.699219 9.5 9.796875h.300781 61.199219c5.398438.101562 9.898438-4.296875 10-9.699219v-.097656-61.203125c0-5.5-4.5-10-10-10h-23v-67.296875c.101562-33.101563 18.601562-63.300781 48-78.5v15.796875c0 5.5 4.398438 10 9.898438 10h61.300781c5.402343 0 9.800781-4.398438 9.800781-9.796875 0-.101563 0-.101563 0-.203125v-15.796875c29.398438 15.097656 48 45.398437 48 78.5v67.296875h-22.800781c-5.597657 0-10.097657 4.402344-10.199219 10v61.203125c.101562 5.5 4.699219 9.898437 10.199219 9.796875h61.199219c5.203124.101562 9.5-4.097656 9.601562-9.398438 0-.101562 0-.300781 0-.398437v-61.203125c.199219-5.296875-4-9.796875-9.300781-10-.097657 0-.199219 0-.300781 0h-18.398438v-67.296875c0-33-14.800781-62.703125-39-83.703125h60.5c5.5 0 10-4.5 10-10s-4.5-10-10-10zm-205.5 232h-41v-41h41zm192 0h-41v-41h41zm-137-201v-41h41v16.601562 6.898438 17.5zm0 0"
+                  ></path>
+                  <g>
+                    <path
+                      d="m39.101562 80.300781c-21.5 0-39.101562-17.898437-39.101562-39.898437s17.5-39.902344 39.101562-39.902344c21.597657 0 39.097657 17.902344 39.097657 39.902344s-17.597657 39.898437-39.097657 39.898437zm0-59.800781c-10.5 0-19.101562 8.902344-19.101562 19.902344s8.601562 19.898437 19.101562 19.898437 19.097657-8.898437 19.097657-19.898437-8.597657-19.902344-19.097657-19.902344zm0 0"
+                    ></path>
+                    <path
+                      d="m360.101562 79.5c-22 0-39.902343-17.5-39.902343-39.097656 0-21.601563 17.902343-39.101563 39.902343-39.101563s39.898438 17.5 39.898438 39.101563c0 21.597656-17.898438 39.097656-39.898438 39.097656zm0-58.199219c-11 0-19.902343 8.601563-19.902343 19.101563s8.902343 19.097656 19.902343 19.097656 19.898438-8.597656 19.898438-19.097656-8.898438-19.101563-19.898438-19.101563zm0 0"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <h3>Creative Design</h3>
+                <span>Starts from <b>$99</b></span>
+                <p>
+                  Web design refers to the design of websites that are displayed
+                  on the internet. It usually refers to the user experience
+                  aspects of website development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service_item" data-tilt>
+              <div class="icon">
+                <img
+                  class="img-fluid"
+                  src="images/service-icon-1.png"
+                  alt="victor image"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="400"
+                  viewBox="0 -59 400 400"
+                  width="400"
+                  class="svg replaced-svg"
+                >
+                  <path
+                    d="m329.5 30h-89.5v-20.199219c.101562-5.300781-4.199219-9.699219-9.5-9.800781-.101562 0-.199219 0-.300781 0h-61.199219c-5.398438-.0976562-9.898438 4.203125-10 9.703125v.097656 20.199219h-89.300781c-5.5 0-10 4.5-10 10s4.5 10 10 10h60.601562c-24.199219 21-39.300781 50.800781-39.300781 83.703125v67.296875h-18.199219c-5.402343 0-9.800781 4.402344-9.800781 9.800781v.199219 61.203125c-.101562 5.296875 4.199219 9.699219 9.5 9.796875h.300781 61.199219c5.398438.101562 9.898438-4.296875 10-9.699219v-.097656-61.203125c0-5.5-4.5-10-10-10h-23v-67.296875c.101562-33.101563 18.601562-63.300781 48-78.5v15.796875c0 5.5 4.398438 10 9.898438 10h61.300781c5.402343 0 9.800781-4.398438 9.800781-9.796875 0-.101563 0-.101563 0-.203125v-15.796875c29.398438 15.097656 48 45.398437 48 78.5v67.296875h-22.800781c-5.597657 0-10.097657 4.402344-10.199219 10v61.203125c.101562 5.5 4.699219 9.898437 10.199219 9.796875h61.199219c5.203124.101562 9.5-4.097656 9.601562-9.398438 0-.101562 0-.300781 0-.398437v-61.203125c.199219-5.296875-4-9.796875-9.300781-10-.097657 0-.199219 0-.300781 0h-18.398438v-67.296875c0-33-14.800781-62.703125-39-83.703125h60.5c5.5 0 10-4.5 10-10s-4.5-10-10-10zm-205.5 232h-41v-41h41zm192 0h-41v-41h41zm-137-201v-41h41v16.601562 6.898438 17.5zm0 0"
+                  ></path>
+                  <g>
+                    <path
+                      d="m39.101562 80.300781c-21.5 0-39.101562-17.898437-39.101562-39.898437s17.5-39.902344 39.101562-39.902344c21.597657 0 39.097657 17.902344 39.097657 39.902344s-17.597657 39.898437-39.097657 39.898437zm0-59.800781c-10.5 0-19.101562 8.902344-19.101562 19.902344s8.601562 19.898437 19.101562 19.898437 19.097657-8.898437 19.097657-19.898437-8.597657-19.902344-19.097657-19.902344zm0 0"
+                    ></path>
+                    <path
+                      d="m360.101562 79.5c-22 0-39.902343-17.5-39.902343-39.097656 0-21.601563 17.902343-39.101563 39.902343-39.101563s39.898438 17.5 39.898438 39.101563c0 21.597656-17.898438 39.097656-39.898438 39.097656zm0-58.199219c-11 0-19.902343 8.601563-19.902343 19.101563s8.902343 19.097656 19.902343 19.097656 19.898438-8.597656 19.898438-19.097656-8.898438-19.101563-19.898438-19.101563zm0 0"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <h3>Creative Design</h3>
+                <span>Starts from <b>$99</b></span>
+                <p>
+                  Web design refers to the design of websites that are displayed
+                  on the internet. It usually refers to the user experience
+                  aspects of website development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service_item" data-tilt>
+              <div class="icon">
+                <img
+                  class="img-fluid"
+                  src="images/service-icon-1.png"
+                  alt="victor image"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="400"
+                  viewBox="0 -59 400 400"
+                  width="400"
+                  class="svg replaced-svg"
+                >
+                  <path
+                    d="m329.5 30h-89.5v-20.199219c.101562-5.300781-4.199219-9.699219-9.5-9.800781-.101562 0-.199219 0-.300781 0h-61.199219c-5.398438-.0976562-9.898438 4.203125-10 9.703125v.097656 20.199219h-89.300781c-5.5 0-10 4.5-10 10s4.5 10 10 10h60.601562c-24.199219 21-39.300781 50.800781-39.300781 83.703125v67.296875h-18.199219c-5.402343 0-9.800781 4.402344-9.800781 9.800781v.199219 61.203125c-.101562 5.296875 4.199219 9.699219 9.5 9.796875h.300781 61.199219c5.398438.101562 9.898438-4.296875 10-9.699219v-.097656-61.203125c0-5.5-4.5-10-10-10h-23v-67.296875c.101562-33.101563 18.601562-63.300781 48-78.5v15.796875c0 5.5 4.398438 10 9.898438 10h61.300781c5.402343 0 9.800781-4.398438 9.800781-9.796875 0-.101563 0-.101563 0-.203125v-15.796875c29.398438 15.097656 48 45.398437 48 78.5v67.296875h-22.800781c-5.597657 0-10.097657 4.402344-10.199219 10v61.203125c.101562 5.5 4.699219 9.898437 10.199219 9.796875h61.199219c5.203124.101562 9.5-4.097656 9.601562-9.398438 0-.101562 0-.300781 0-.398437v-61.203125c.199219-5.296875-4-9.796875-9.300781-10-.097657 0-.199219 0-.300781 0h-18.398438v-67.296875c0-33-14.800781-62.703125-39-83.703125h60.5c5.5 0 10-4.5 10-10s-4.5-10-10-10zm-205.5 232h-41v-41h41zm192 0h-41v-41h41zm-137-201v-41h41v16.601562 6.898438 17.5zm0 0"
+                  ></path>
+                  <g>
+                    <path
+                      d="m39.101562 80.300781c-21.5 0-39.101562-17.898437-39.101562-39.898437s17.5-39.902344 39.101562-39.902344c21.597657 0 39.097657 17.902344 39.097657 39.902344s-17.597657 39.898437-39.097657 39.898437zm0-59.800781c-10.5 0-19.101562 8.902344-19.101562 19.902344s8.601562 19.898437 19.101562 19.898437 19.097657-8.898437 19.097657-19.898437-8.597657-19.902344-19.097657-19.902344zm0 0"
+                    ></path>
+                    <path
+                      d="m360.101562 79.5c-22 0-39.902343-17.5-39.902343-39.097656 0-21.601563 17.902343-39.101563 39.902343-39.101563s39.898438 17.5 39.898438 39.101563c0 21.597656-17.898438 39.097656-39.898438 39.097656zm0-58.199219c-11 0-19.902343 8.601563-19.902343 19.101563s8.902343 19.097656 19.902343 19.097656 19.898438-8.597656 19.898438-19.097656-8.898438-19.101563-19.898438-19.101563zm0 0"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <h3>Creative Design</h3>
+                <span>Starts from <b>$99</b></span>
+                <p>
+                  Web design refers to the design of websites that are displayed
+                  on the internet. It usually refers to the user experience
+                  aspects of website development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service_item" data-tilt>
+              <div class="icon">
+                <img
+                  class="img-fluid"
+                  src="images/service-icon-1.png"
+                  alt="victor image"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="400"
+                  viewBox="0 -59 400 400"
+                  width="400"
+                  class="svg replaced-svg"
+                >
+                  <path
+                    d="m329.5 30h-89.5v-20.199219c.101562-5.300781-4.199219-9.699219-9.5-9.800781-.101562 0-.199219 0-.300781 0h-61.199219c-5.398438-.0976562-9.898438 4.203125-10 9.703125v.097656 20.199219h-89.300781c-5.5 0-10 4.5-10 10s4.5 10 10 10h60.601562c-24.199219 21-39.300781 50.800781-39.300781 83.703125v67.296875h-18.199219c-5.402343 0-9.800781 4.402344-9.800781 9.800781v.199219 61.203125c-.101562 5.296875 4.199219 9.699219 9.5 9.796875h.300781 61.199219c5.398438.101562 9.898438-4.296875 10-9.699219v-.097656-61.203125c0-5.5-4.5-10-10-10h-23v-67.296875c.101562-33.101563 18.601562-63.300781 48-78.5v15.796875c0 5.5 4.398438 10 9.898438 10h61.300781c5.402343 0 9.800781-4.398438 9.800781-9.796875 0-.101563 0-.101563 0-.203125v-15.796875c29.398438 15.097656 48 45.398437 48 78.5v67.296875h-22.800781c-5.597657 0-10.097657 4.402344-10.199219 10v61.203125c.101562 5.5 4.699219 9.898437 10.199219 9.796875h61.199219c5.203124.101562 9.5-4.097656 9.601562-9.398438 0-.101562 0-.300781 0-.398437v-61.203125c.199219-5.296875-4-9.796875-9.300781-10-.097657 0-.199219 0-.300781 0h-18.398438v-67.296875c0-33-14.800781-62.703125-39-83.703125h60.5c5.5 0 10-4.5 10-10s-4.5-10-10-10zm-205.5 232h-41v-41h41zm192 0h-41v-41h41zm-137-201v-41h41v16.601562 6.898438 17.5zm0 0"
+                  ></path>
+                  <g>
+                    <path
+                      d="m39.101562 80.300781c-21.5 0-39.101562-17.898437-39.101562-39.898437s17.5-39.902344 39.101562-39.902344c21.597657 0 39.097657 17.902344 39.097657 39.902344s-17.597657 39.898437-39.097657 39.898437zm0-59.800781c-10.5 0-19.101562 8.902344-19.101562 19.902344s8.601562 19.898437 19.101562 19.898437 19.097657-8.898437 19.097657-19.898437-8.597657-19.902344-19.097657-19.902344zm0 0"
+                    ></path>
+                    <path
+                      d="m360.101562 79.5c-22 0-39.902343-17.5-39.902343-39.097656 0-21.601563 17.902343-39.101563 39.902343-39.101563s39.898438 17.5 39.898438 39.101563c0 21.597656-17.898438 39.097656-39.898438 39.097656zm0-58.199219c-11 0-19.902343 8.601563-19.902343 19.101563s8.902343 19.097656 19.902343 19.097656 19.898438-8.597656 19.898438-19.097656-8.898438-19.101563-19.898438-19.101563zm0 0"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <h3>Creative Design</h3>
+                <span>Starts from <b>$99</b></span>
+                <p>
+                  Web design refers to the design of websites that are displayed
+                  on the internet. It usually refers to the user experience
+                  aspects of website development
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service part end -->
+
+    <!-- Testimonial part Start -->
+    <section id="testimonial">
+      <div class="container">
+        <div class="section_heading">
+          <h3>testimonial</h3>
+          <h2>What My Clients Say</h2>
+          <p>
+            Most common methods for designing websites that work well on desktop
+            is responsive and adaptive design
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 m-auto">
+            <div class="testimonial_slider">
+              <!-- 01 -->
+              <div class="slide_item">
+                <div class="testimonial_item">
+                  <div class="text">
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        id="Layer_1"
+                        x="0px"
+                        y="0px"
+                        width="200px"
+                        height="200px"
+                        viewBox="796 698 200 200"
+                        enable-background="new 796 698 200 200"
+                        xml:space="preserve"
+                        class="svg replaced-svg"
+                      >
+                        <g>
+                          <path
+                            d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"
+                          ></path>
+                          <path
+                            d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </span>
+                    <p>
+                      Loved the template design, documentation, customizability
+                      and the customer support from Marketify team! I am a noob
+                      in programming with very little knowledge about coding but
+                      the Marketify team helped me to launch my resume website
+                      successfully. Much recommended!
+                    </p>
+                  </div>
+                  <div class="client">
+                    <div class="image">
+                      <img
+                        class="img-fluid"
+                        src="images/testominial-1.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="text">
+                      <h5>Alan Walker</h5>
+                      <span>Web Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 02 -->
+              <div class="slide_item">
+                <div class="testimonial_item">
+                  <div class="text">
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        id="Layer_1"
+                        x="0px"
+                        y="0px"
+                        width="200px"
+                        height="200px"
+                        viewBox="796 698 200 200"
+                        enable-background="new 796 698 200 200"
+                        xml:space="preserve"
+                        class="svg replaced-svg"
+                      >
+                        <g>
+                          <path
+                            d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"
+                          ></path>
+                          <path
+                            d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </span>
+                    <p>
+                      Loved the template design, documentation, customizability
+                      and the customer support from Marketify team! I am a noob
+                      in programming with very little knowledge about coding but
+                      the Marketify team helped me to launch my resume website
+                      successfully. Much recommended!
+                    </p>
+                  </div>
+                  <div class="client">
+                    <div class="image">
+                      <img
+                        class="img-fluid"
+                        src="images/testominial-1.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="text">
+                      <h5>Alan Walker</h5>
+                      <span>Web Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 03 -->
+              <div class="slide_item">
+                <div class="testimonial_item">
+                  <div class="text">
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        id="Layer_1"
+                        x="0px"
+                        y="0px"
+                        width="200px"
+                        height="200px"
+                        viewBox="796 698 200 200"
+                        enable-background="new 796 698 200 200"
+                        xml:space="preserve"
+                        class="svg replaced-svg"
+                      >
+                        <g>
+                          <path
+                            d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"
+                          ></path>
+                          <path
+                            d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"
+                          ></path>
+                        </g>
+                      </path>
+                    </span>
+                    <p>
+                      Loved the template design, documentation, customizability
+                      and the customer support from Marketify team! I am a noob
+                      in programming with very little knowledge about coding but
+                      the Marketify team helped me to launch my resume website
+                      successfully. Much recommended!
+                    </p>
+                  </div>
+                  <div class="client">
+                    <div class="image">
+                      <img
+                        class="img-fluid"
+                        src="images/testominial-1.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="text">
+                      <h5>Alan Walker</h5>
+                      <span>Web Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial part End -->
+
+    <!-- Brand part Start -->
+    <section id="brand" >
+      <div class="container">
+        <div class="brand_main">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-3">
+              <div class="brand_item">
+                <a href="#" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="900">
+                  <img src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="brand_item">
+                <a href="#" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="1200">
+                  <img src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="brand_item">
+                <a href="#" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="1500">
+                  <img src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="brand_item br_none">
+                <a href="#" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="1800">
+                  <img src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="brand_item bb_none">
+                <a href="#" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="2100">
+                  <img src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="brand_item bb_none">
+                <a href="#" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="2400">
+                  <img src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="brand_item bb_none">
+                <a href="#" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="2700">
+                  <img src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="brand_item br_none bb_none">
+                <a href="#" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="3000" data-aos-duration="3000">
+                  <img src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 d-sm-none">
+            <div class="col-sm-3 col-md-6 col-6">
+              <div class="brand_item">
+                <a href="#">
+                  <img class="img-fluid" src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-6 col-6">
+              <div class="brand_item">
+                <a href="#">
+                  <img class="img-fluid" src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-6 col-6">
+              <div class="brand_item">
+                <a href="#" >
+                  <img class="img-fluid" src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-6 col-6">
+              <div class="brand_item br_none">
+                <a href="#" >
+                  <img class="img-fluid" src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-6 col-6">
+              <div class="brand_item bb_none">
+                <a href="#" >
+                  <img class="img-fluid" src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-6 col-6">
+              <div class="brand_item bb_none">
+                <a href="#">
+                  <img class="img-fluid" src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-6 col-6">
+              <div class="brand_item bb_none">
+                <a href="#" >
+                  <img class="img-fluid" src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-6 col-6">
+              <div class="brand_item br_none bb_none">
+                <a href="#">
+                  <img class="img-fluid" src="images/brand-icon-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Brand part END -->
+
+
+    <!-- Blog part Start -->
+    <section id="blog">
+      <div class="container">
+        <div class="section_heading">
+          <h3>From My Blog</h3>
+          <h2>Our Recent Updates, Blog, Tips, Tricks & More</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="blog_item">
+              <div class="image">
+                <img class="img-fluid" src="images/blog-1.jpg" alt="image">
+                <div class="date">
+                  <b>23</b>
+                  <span>Dec</span>
+                </div>
+              </div>
+              <div class="info">
+                <h4>Web Development</h4>
+                <h3>Jim Morisson Says when the musics over turn off the light</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog_item">
+              <div class="image">
+                <img class="img-fluid" src="images/blog-1.jpg" alt="image">
+                <div class="date">
+                  <b>23</b>
+                  <span>Dec</span>
+                </div>
+              </div>
+              <div class="info">
+                <h4>Web Development</h4>
+                <h3>Jim Morisson Says when the musics over turn off the light</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog_item">
+              <div class="image">
+                <img class="img-fluid" src="images/blog-1.jpg" alt="image">
+                <div class="date">
+                  <b>23</b>
+                  <span>Dec</span>
+                </div>
+              </div>
+              <div class="info">
+                <h4>Web Development</h4>
+                <h3>Jim Morisson Says when the musics over turn off the light</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog part Ean -->
+
+    <!-- Newsletter part start -->
+    <section id="newsletter" >
+      <div class="container">
+        <div class="newsletter">
+          <div class="overlay">
+            <div class="row align-items-center">
+              <div class="col-lg-5 offset-lg-1">
+                <div class="news_text">
+                  <h4>Subscribe Now</h4>
+                  <h3>Get My Newsletter</h3>
+                  <p>Get latest news, updates, tips and trics in your inbox</p>
+                </div>
+              </div>
+              <div class="col-lg-5 ">
+                <div class="input_box">
+                  <form action="#">
+                    <input type="email" placeholder="Your Email Here">
+                    <input type="submit" value="Send Now">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter part end -->
+
+    <!-- Contact part start -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact_left">
+              <div class="item">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>20, Somewhere in world</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <a href="mailto:hello@dizme.com">hello@dizme.com</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <a href="tel:+0161 6639307">+0161 6639307</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact_form">
+              <form action="#">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <input type="text" placeholder="Your Phone">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Massage"></textarea>
+                <div class="form_btn">
+                  <button class="common_btn_one" type="submit">Submit Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact part end -->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.lineProgressbar.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
